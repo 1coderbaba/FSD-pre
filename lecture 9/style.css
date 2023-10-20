@@ -1,0 +1,55 @@
+.parent
+{
+    height:400px;
+    /* width:400px; */
+    border:2px solid black;
+    margin:50px;
+    box-shadow: 0 0 50px blue;
+    display: flex;
+    /* flex-direction: row;
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    */
+    justify-content: right;
+    justify-content: center;
+    justify-content: flex-end;
+    justify-content: space-between;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.child
+{
+    height:60px;
+    width: 260px;
+    border:2px solid grey;
+    background-color: green;
+
+}
+
+.child:first-child
+{
+    /* flex-grow: 2; */
+    flex-shrink: 2;
+    background-color: blueviolet;
+}
+
+.child:last-child
+{
+    /* flex-grow: 1; */
+    flex-shrink: 1;
+    background-color: orangered;
+}
+
+
+/* .child:first-child
+{
+    align-self: flex-start;
+}
+.child:last-child
+{
+    align-self: center;
+} */
